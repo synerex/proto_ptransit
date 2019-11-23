@@ -1,4 +1,4 @@
-module ptransit
+module proto_ptransit
 
 go 1.12
 
