@@ -4,6 +4,8 @@ package ptransit;
 
 option go_package="github.com/synerex/proto_ptransit";
 
+
+import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 
 message PTService
@@ -17,8 +19,12 @@ message PTService
     int32 vehicle_id = 7;
     float angle = 8;
     int32 speed = 9;
-    google.protobuf.Duration delay_time = 13;
-    int32 vehicle_type = 14;
+    float lat = 10;
+    float lon = 11;
+    google.protobuf.Timestamp next_arraival_timetable_time = 12;
+    google.protobuf.Timestamp past_departure_time = 13;
+    google.protobuf.Duration delay_time = 14;
+    int32 vehicle_type = 15;
 }
 
 message PTgtfs
