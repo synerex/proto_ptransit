@@ -1,4 +1,4 @@
-module proto_ptransit
+module github.com/synerex/proto_ptransit
 
 go 1.12
 
